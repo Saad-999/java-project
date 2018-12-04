@@ -2,7 +2,7 @@ properties([pipelineTriggers([githubPush()])])
 
 node('linux') { 
     stage('Unit Tests') {
-        git 'https://github.com/Itidal/java-project.git'
+        git 'https://github.com/Saad-999/java-project.git'
         sh 'ant -f test.xml -v' 
     }
     stage('Build') { 
